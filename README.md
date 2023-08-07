@@ -94,7 +94,7 @@ With k8s Provider you can have access to different K8s resources
 
 Executes the plan with providers 
 
-- Example Configuration File 
+### Example Configuration File 
 ```bash
 provider "kubernetes" {
   config_path    = "~/.kube/config"
@@ -161,3 +161,24 @@ DECLARATIVE config file:
 - user with following permissions 
 
 adjust old config and ere-executes 
+
+
+### Terraform commands
+- refresh 
+
+with refresh command query the infrastructure provider to get current state 
+
+- plan
+
+determines what actions are necessary to achieve the desired state 
+
+- apply 
+
+executes the plan 
+
+-destroy
+
+destroy the resources/infrastructure -one by one 
+
+
+
