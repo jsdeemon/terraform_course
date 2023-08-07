@@ -63,8 +63,24 @@ DevOps engineers use a combination of Terraform and Ansible for own strings
 
 
 
+Managing existing infrastructure
+- create inftraatructure
+- managing the infrastructure
+  -- automate the continouse changing to your infrastructure
+- replicating infrastructure 
+
+Dev environment -> prod environment -> create same infrastructure for production 
+
+how does Terraform connect to infrasttucture?
 
 - Terraform Architecture and commands 
+
+Terraform has 2 main components:
+- Core. Core has 2 input sources:
+1. Terraform configuration that you as a user write and where you define what needs to be created or provisioned 
+2. State - makes state how infrastructure looks like 
+
+Core takes this two inputs and makes a plan: what needs to be created/updated/destroyed 
 
 - Example Configuration File 
 
