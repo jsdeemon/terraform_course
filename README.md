@@ -40,11 +40,29 @@ You developed infrastructure for application
 - 1. Provisioning infrastructure - DevOps
 - 2. Deploying application - Software Developers
 
-Terraform is used on the 1 stage where Provisioning infrastructure
+Terraform is used on the 1 stage where Provisioning infrastructure:
+- create VPS
+- create AWS users and permissions
+- spin up servers
+- install Docker 
 
 - What is Terraform used for?
 
-- Difference between Terraform and Ansible 
+- Difference between Terraform and Ansible:
+they are both Infrastructure as a Code
+both used to automate provisioning, configuring and managing the infrastructure
+
+Terraform is mainly infrastructure provisioning tool
+Ansible is mainly configuration tool - to configure that infrastructure 
+Ansible is more mature, and Terraform is new
+Terraform is much more advanced in Orchestration 
+Terraform better for infrastructure 
+Ansible better for configuring infrastructure
+
+DevOps engineers use a combination of Terraform and Ansible for own strings 
+
+
+
 
 - Terraform Architecture and commands 
 
