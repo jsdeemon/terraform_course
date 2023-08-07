@@ -1,6 +1,9 @@
 ## Terraform course 
 https://www.youtube.com/watch?v=l5k1ai_GBDE 
 
+How to use Terraform with docker-compose 
+https://londonappdeveloper.com/how-to-use-terraform-via-docker-compose-for-professional-developers/
+
 ### With Jenkins
 https://spacelift.io/blog/terraform-jenkins
 - Step 1: Installing Terraform Plugin on Jenkins. ...
