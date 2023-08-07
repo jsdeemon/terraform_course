@@ -81,6 +81,52 @@ Terraform has 2 main components:
 2. State - makes state how infrastructure looks like 
 
 Core takes this two inputs and makes a plan: what needs to be created/updated/destroyed 
+It compares current state with a desired state (config file)
+
+- Providers - AWS, Azure, IAAS
+
+Terraform has a providers for other such Kubernetes
+Enables to create and deploy K8s on top of it and create a services and components inside that k8s cluster  
+
+Terraform has over 100 providers for different technologies 
+
+With k8s Provider you can have access to different K8s resources 
+
+Executes the plan with providers 
 
 - Example Configuration File 
+```bash
+provider "kubernetes" {
+  config_path    = "~/.kube/config"
+  config_context = "my-context"
+}
+
+resource "kubernetes_namespace" "example" {
+  metadata {
+    name = "my-first-namespace"
+  }
+}
+
+
+# create a VPC
+
+resource "aws_vpc" "example" {
+    cidr_block = "10.0.0.0/16"
+}
+```
+
+```bash
+provider "aws" {
+  region                  = "your region"
+  shared_credentials_file = "path_file_credentials like C:\Users\terraform\.aws\credentials"
+  profile                 = "profile_name"
+}
+
+
+provider "aws" {
+  region     = "us-west-2"
+  access_key = "my-access-key"
+  secret_key = "my-secret-key"
+}
+```
 
