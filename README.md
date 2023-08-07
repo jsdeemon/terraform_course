@@ -1,6 +1,16 @@
 ## Terraform course 
 https://www.youtube.com/watch?v=l5k1ai_GBDE 
 
+### With Jenkins
+https://spacelift.io/blog/terraform-jenkins
+- Step 1: Installing Terraform Plugin on Jenkins. ...
+- Step 2: Installing Terraform Binary. ...
+- Step 3: Preparing the Terraform Config. ...
+- Step 4: Create a Jenkins Pipeline. ...
+- Step 5: Jenkins Pipeline Script. ...
+- Step 6: Configuring Access to AWS. ...
+- Step 7: Testing the Pipeline.
+
 
 - What is Terraform? 
 
@@ -18,7 +28,19 @@ You have an application -> my-app
 You developed infrastructure for application 
 
 - several servers, where you deploy 5 microservice that make up your application as Docker containers and also you deploy a database container
++ AWS 
+- prepare infrastructure
+   -- private network space
+   -- ec2 server instances
+   -- install docker and other tools inside each one
+   -- setup security on your servers )firewalls, etc.)_
 
+
+### 2 Stages
+- 1. Provisioning infrastructure - DevOps
+- 2. Deploying application - Software Developers
+
+Terraform is used on the 1 stage where Provisioning infrastructure
 
 - What is Terraform used for?
 
