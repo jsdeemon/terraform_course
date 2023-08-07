@@ -130,3 +130,34 @@ provider "aws" {
 }
 ```
 
+Imperative defines HOW it is shoud be
+
+What does declarative mean exactly? 
+
+You define the end-state in your config file
+
+For example, i want:
+- 5 xervers with following network config
+- AWS user with permissions i define in config
+
+
+Benefits with updating the infrastructure:
+
+Imperative config file:
+- remove 2 servers
+- add firewall config
+
+YOU GIVE INSTRUCTIONS
+
+
+BUT IN DECLARATIVE APPROACH IN TERRAFORM
+you configure desired state 
+
+so Terraform checks current state with your new desired state from config file and makes all your wishes
+
+DECLARATIVE config file:
+- 7 servers
+- this firewall config
+- user with following permissions 
+
+adjust old config and ere-executes 
